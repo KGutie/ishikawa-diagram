@@ -4,7 +4,321 @@
 <head>
   <link rel="stylesheet" href="./style.css">
   <link rel="canonical" href="https://kdahlquist.netlify.app/" />
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"><!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="canonical" href="https://kdahlquist.netlify.app/" />
   <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ishikawa Diagram Tool </title>
+  <meta name="description" content="A tool for finding the root cause of problems." />
+
+  <!-- Open Graph Meta Tags to show content on social media platforms -->
+  <meta property="og:title" content="Kristy Dahlquist Portfolio">
+  <meta property="og:description" content="Explore the portfolio of Kristy Dahlquist, a Program Manager skilled in building relationships, systems, and strategies.">
+  <meta property="og:image" content="https://i.postimg.cc/xCCynyrn/Open-Graph-OG-meta-image-1.png" alt="screen-shot-of-website-hero">
+  <meta property="og:url" content="https://kdahlquist.netlify.app/">
+  <meta property="og:type" content="portfolio" />
+  <meta property="og:site_name" content="Kristy Dahlquist Portfolio">
+  <!-- Robots meta tag to control search engine indexing -->
+  <meta name="robots" content="index, follow">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/QNyPYy4Q/favicon.png">
+  <!-- Favicon for 3x resolution iPhone: -->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://i.postimg.cc/QNyPYy4Q/favicon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Duru+Sans&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<header>
+  <div class="header">
+    <h1 id="title">Ishikawa Diagram
+    </h1>
+    <p id="description"> Root Cause Identification Tool
+    </p>
+    <p class="mobile-size-memo"> Looks like you're on mobile.<br><br> This tool prefers the big screen. Meet me there?</p>
+  </div>
+</header>
+
+<body>
+  <div>
+
+    <div class="content-wrapper">
+      <h3> Build Your Diagram</h3>
+
+      <!-- Begin Top Dropdown section  -->
+      <form class="form-box">
+        <div class="dropdown-group">
+          <!--Begin Cause Category 1 Section -->
+          <select name="cause-category" type="dropdown" class="dropdown" required>
+            <option disabled selected value>Select a Cause Category</option>
+
+            <option value="communication">Communication</option>
+            <option value="customer-requirements">Customer Requirements</option>
+
+            <option value="environment">Environment</option>
+
+            <option value="external-factors">External Factors</option>
+            <option value="people">People</option>
+            <option value="process">Process</option>
+            <option value="management">Management</option>
+            <option value="materials">Materials</option>
+            <option value="measurement">Measurement</option>
+
+            <option value="method">Method</option>
+
+            <option value="technology">Technology</option>
+          </select>
+
+          <!--End Cause Category 1 Section -->
+
+          <!--Begin Cause Category 2 Section -->
+          <select name="cause-category" type="dropdown" class="dropdown" required>
+            <option disabled selected value>Select a Cause Category</option>
+
+            <option value="communication">Communication</option>
+            <option value="customer-requirements">Customer Requirements</option>
+
+            <option value="environment">Environment</option>
+
+            <option value="external-factors">External Factors</option>
+            <option value="people">People</option>
+            <option value="process">Process</option>
+            <option value="management">Management</option>
+            <option value="materials">Materials</option>
+            <option value="measurement">Measurement</option>
+
+            <option value="method">Method</option>
+
+            <option value="technology">Technology</option>
+          </select>
+          <!--End Cause Category 2 Section -->
+
+          <!--Begin Cause Category 3 Section -->
+          <select name="cause-category" type="dropdown" class="dropdown" required>
+            <option disabled selected value>Select a Cause Category</option>
+
+            <option value="communication">Communication</option>
+            <option value="customer-requirements">Customer Requirements</option>
+
+            <option value="environment">Environment</option>
+
+            <option value="external-factors">External Factors</option>
+            <option value="people">People</option>
+            <option value="process">Process</option>
+            <option value="management">Management</option>
+            <option value="materials">Materials</option>
+            <option value="measurement">Measurement</option>
+
+            <option value="method">Method</option>
+
+            <option value="technology">Technology</option>
+          </select>
+          <!--End Cause Category 3 Section -->
+        </div>
+      </form>
+
+      <!--  Begin Specific Causes A-I -->
+      <form class="form-box-a">
+        <div class="form-group-1">
+          <label for="specific-cause"></label>
+          <input type="text" name:"specific-cause" class="cause-text" placeholder="Enter Specific Cause" required>
+
+          <label for="specific-cause"></label>
+          <input type="text" name:"specific-cause" class="cause-text" placeholder="Enter Specific Cause" required>
+
+          <label for="specific-cause"></label>
+          <input type="text" name:"specific-cause" class="cause-text" placeholder="Enter Specific Cause" required>
+        </div>
+      </form>
+      <form class="form-box-b">
+        <div class="form-group-1">
+          <label for="specific-cause"></label>
+          <input type="text" name:"specific-cause" class="cause-text" placeholder="Enter Specific Cause" required>
+
+          <label for="specific-cause"></label>
+          <input type="text" name:"specific-cause" class="cause-text" placeholder="Enter Specific Cause" required>
+
+          <label for="specific-cause"></label>
+          <input type="text" name:"specific-cause" class="cause-text" placeholder="Enter Specific Cause" required>
+        </div>
+      </form>
+
+      <form class="form-box-c">
+        <div class="form-group-1">
+          <label for="specific-cause"></label>
+          <input type="text" name:"specific-cause" class="cause-text" placeholder="Enter Specific Cause" required>
+
+          <label for="specific-cause"></label>
+          <input type="text" name:"specific-cause" class="cause-text" placeholder="Enter Specific Cause" required>
+
+          <label for="specific-cause"></label>
+          <input type="text" name:"specific-cause" class="cause-text" placeholder="Enter Specific Cause" required>
+        </div>
+      </form>
+      <!--End Specific Causes A-I -->
+
+      <div class="head-box">
+
+        <!--Head of Diagram -->
+        <form class="form-box-fishhead">
+          <div class="form-group-fishhead">
+            <label for="problem"></label>
+            <input type="text" name:"fishhead" class="fishhead-text" placeholder="Enter Problem" required>
+          </div>
+        </form>
+
+        <!--End head of diagram-->
+      </div>
+      <!--  Begin Specific Causes J-R -->
+      <form class="form-box-d">
+        <div class="form-group-2">
+          <label for="specific-cause"></label>
+          <input type="text" name:"specific-cause" class="cause-text" placeholder="Enter Specific Cause" required>
+
+          <label for="specific-cause"></label>
+          <input type="text" name:"specific-cause" class="cause-text" placeholder="Enter Specific Cause" required>
+
+          <label for="specific-cause"></label>
+          <input type="text" name:"specific-cause" class="cause-text" placeholder="Enter Specific Cause" required>
+        </div>
+      </form>
+      <form class="form-box-e">
+        <div class="form-group-2">
+          <label for="specific-cause"></label>
+          <input type="text" name:"specific-cause" class="cause-text" placeholder="Enter Specific Cause" required>
+
+          <label for="specific-cause"></label>
+          <input type="text" name:"specific-cause" class="cause-text" placeholder="Enter Specific Cause" required>
+
+          <label for="specific-cause"></label>
+          <input type="text" name:"specific-cause" class="cause-text" placeholder="Enter Specific Cause" required>
+        </div>
+      </form>
+
+      <form class="form-box-f">
+        <div class="form-group-2">
+          <label for="specific-cause"></label>
+          <input type="text" name:"specific-cause" class="cause-text" placeholder="Enter Specific Cause" required>
+
+          <label for="specific-cause"></label>
+          <input type="text" name:"specific-cause" class="cause-text" placeholder="Enter Specific Cause" required>
+
+          <label for="specific-cause"></label>
+          <input type="text" name:"specific-cause" class="cause-text" placeholder="Enter Specific Cause" required>
+        </div>
+      </form>
+      <!--End Specific Causes J-R -->
+
+      <!-- Begin Bottom Dropdown section  -->
+
+      <form class="form-box">
+        <div class="dropdown-group">
+          <!--Begin Cause Category 4 Section -->
+          <select name="cause-category" type="dropdown" class="dropdown" required>
+            <option disabled selected value>Select a Cause Category</option>
+
+            <option value="communication">Communication</option>
+            <option value="customer-requirements">Customer Requirements</option>
+
+            <option value="environment">Environment</option>
+
+            <option value="external-factors">External Factors</option>
+            <option value="people">People</option>
+            <option value="process">Process</option>
+            <option value="management">Management</option>
+            <option value="materials">Materials</option>
+            <option value="measurement">Measurement</option>
+
+            <option value="method">Method</option>
+
+            <option value="technology">Technology</option>
+          </select>
+
+          <!--End Cause Category 4 Section -->
+
+          <!--Begin Cause Category 5 Section -->
+          <select name="cause-category" type="dropdown" class="dropdown" required>
+            <option disabled selected value>Select a Cause Category</option>
+
+            <option value="communication">Communication</option>
+            <option value="customer-requirements">Customer Requirements</option>
+
+            <option value="environment">Environment</option>
+
+            <option value="external-factors">External Factors</option>
+            <option value="people">People</option>
+            <option value="process">Process</option>
+            <option value="management">Management</option>
+            <option value="materials">Materials</option>
+            <option value="measurement">Measurement</option>
+
+            <option value="method">Method</option>
+
+            <option value="technology">Technology</option>
+          </select>
+          <!--End Cause Category 5 Section -->
+
+          <!--Begin Cause Category 6 Section -->
+          <select name="cause-category" type="dropdown" class="dropdown" required>
+            <option disabled selected value>Select a Cause Category</option>
+
+            <option value="communication">Communication</option>
+            <option value="customer-requirements">Customer Requirements</option>
+
+            <option value="environment">Environment</option>
+
+            <option value="external-factors">External Factors</option>
+            <option value="people">People</option>
+            <option value="process">Process</option>
+            <option value="management">Management</option>
+            <option value="materials">Materials</option>
+            <option value="measurement">Measurement</option>
+
+            <option value="method">Method</option>
+
+            <option value="technology">Technology</option>
+          </select>
+          <!--End Cause Category 6 Section -->
+        </div>
+      </form>
+
+      <br>
+
+    </div>
+
+    <!--Submit Button-->
+    <div class="button-box">
+      <button type="submit" id="save-as-pdf" class="submit-button">Save to PDF
+      </button>
+    </div>
+    <!--End submit button-->
+    <footer>
+      <div class="social-icon-container">
+          <div>
+           
+             <a href="https://kdahlquist.netlify.app/" target="_blank">
+              <img class="social-icons" src="https://i.ibb.co/rQXdvC7/DSC-0196.jpg" alt="profile-photo">
+            </a>
+            
+            <a href="https://www.linkedin.com/in/kristy-dahlquist/" target="_blank">
+              <img class="social-icons" src="https://toppng.com/uploads/preview/linkedin-color-icon-linkedin-logo-round-11562920732qctvxkrdcd.png" alt="linkedin-logo">
+            </a>
+            <a href="https://github.com/KGutie" target="_blank">
+              <img class="social-icons" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="github-logo">
+            </a>
+          </div>
+        </div>
+      <p><em>Created by K.Dahlquist February 2025</em></p>
+    </footer>
+  </div>
+
+</body>
   <title>Ishikawa Diagram Tool </title>
   <meta name="description" content="A tool for finding the root cause of problems." />
 
