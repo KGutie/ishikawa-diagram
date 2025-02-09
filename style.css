@@ -218,9 +218,9 @@ footer {
 
 /*contains the social icons*/
 .social-icon-container {
-  display: block;
-  margin-top: -20px;
-  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .social-icons {
   border-radius: 150px;
@@ -237,16 +237,22 @@ footer {
   .content-wrapper {
     display: none;
   }
+  
+  #description {
+    text-decoration: none;
+  }
   .mobile-size-memo {
     display: block;
-    color: white;  
+    color: black;  
     height: auto;
     width: auto;
     background: #E8EC67;
     padding: 10px 20px;
     border-radius: 10px;
-   text-shadow: 1px 1px 5px black;
     text-align: center;
+  }
+  .mobile-size-memo:hover {
+    background: #D25BF1;
   }
   button {
     display: none;
