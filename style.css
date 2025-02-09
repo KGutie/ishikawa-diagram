@@ -264,8 +264,24 @@ a {
   text-decoration: none;
 }
 
+/*styling for saved pdf*/
+@media print {
+    header, button, .social-icon-container,  * {
+      visibility: hidden;
+    }
+    .content-wrapper * {
+      visibility: visible;
+    }
+    .content-wrapper {
+      position: absolute;
+      left: 0;
+      top: 30px;
+      width: 80%
+    }
+  }
+
 /*Mobile phone sizing */
-@media not all and (min-width: 1024px) {
+@media (max-width: 480px) {
   .content-wrapper {
     display: none;
   }
