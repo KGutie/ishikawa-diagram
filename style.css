@@ -20,9 +20,9 @@ body {
   border-radius: 20px;
 }
 
- .mobile-size-memo {
-    display: none;
-  }
+.mobile-size-memo {
+  display: none;
+}
 
 h1 {
   text-align: center;
@@ -43,26 +43,26 @@ h4 {
 }
 
 #title {
-  font-size: 5vw;  
+  font-size: 5vw;
 }
 
 #description {
   text-align: center;
   font-size: 30px;
   font-family: arial;
-  text-decoration: underline wavy #E8EC67;
+  text-decoration: underline wavy #e8ec67;
   text-underline-offset: 10px;
   text-decoration-thickness: 2px;
 }
 
 /* This is the white box around the form boxes */
 .content-wrapper {
-  background: #F5F7F1;
+  background: #f5f7f1;
   border-radius: 30px;
   width: 1000px;
   max-width: 100%;
   height: auto;
-  padding: 20px 30px;  
+  padding: 20px 30px;
 }
 
 /* This is the size and color of the dropdown boxes */
@@ -75,7 +75,8 @@ h4 {
   border-radius: 50px;
   border: none;
   border-right: 10px solid transparent;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 .dropdown-group {
@@ -86,19 +87,17 @@ h4 {
   background: none;
   width: 90vw;
   margin-left: 0px;
-  
 }
-
 
 /*dropdown form box this is the box container for the cause category */
 .form-box {
-   max-width: 90%;;
+  max-width: 90%;
   max-width: 700px;
-  
- /*dropdown form boxes this is the box container for the specific causes */
+
+  /*dropdown form boxes this is the box container for the specific causes */
 }
 .form-box-a {
-   max-width: 100%;;
+  max-width: 100%;
   max-width: 700px;
   margin-left: 40px;
   z-index: 1;
@@ -111,7 +110,7 @@ h4 {
 }
 
 .form-box-c {
-   max-width: 100%;
+  max-width: 100%;
   max-width: 700px;
   margin-left: 160px;
 }
@@ -125,8 +124,8 @@ h4 {
   padding: 0px;
   font-size: 20px;
   font-weight: bold;
-   max-width: 90%;
-  margin: 0px;  
+  max-width: 90%;
+  margin: 0px;
   top: 550px;
 }
 
@@ -139,13 +138,14 @@ h4 {
 /* the actual fishhead */
 .fishhead-text {
   border-radius: 100px;
-  background: #E8EC67;
+  background: #e8ec67;
   height: 200px;
   width: 200px;
   text-align: center;
   border: none;
   font-size: 16px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
 .form-box-d {
@@ -153,11 +153,11 @@ h4 {
   width: 90vw;
   max-width: 700px;
   margin-left: 160px;
-    z-index: 1;
+  z-index: 1;
 }
 
 .form-box-e {
-   max-width: 90%;
+  max-width: 90%;
   max-width: 700px;
   margin-left: 100px;
 }
@@ -169,14 +169,15 @@ h4 {
 }
 /* the text box for specific causes */
 .cause-text {
-  background-color: #F2F79E;
+  background-color: #f2f79e;
   width: 170px;
   height: 20px;
   margin: 10px;
   padding: 5px 10px;
   border-radius: 50px;
   border: 1px transparent solid;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
 select {
@@ -189,14 +190,14 @@ select {
   display: flex;
   flex-direction: row;
   justify-content: center;
- max-width: 90%;
+  max-width: 90%;
   height: auto;
 }
 
 .submit-button {
   padding: 10px;
   margin-top: 20px;
-  background: #927AFF;
+  background: #927aff;
   border: none;
   font-weight: bold;
   border-radius: 50px;
@@ -206,7 +207,7 @@ select {
 }
 
 button:hover {
-  background-color: #D25BF1;
+  background-color: #d25bf1;
   transition: background-color 500ms;
 }
 
@@ -224,7 +225,7 @@ footer {
 }
 .social-icons {
   border-radius: 150px;
-  border: 3px solid #E8EC67;
+  border: 3px solid #e8ec67;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   height: 40px;
@@ -232,33 +233,38 @@ footer {
   margin: 2px;
 }
 
+a {
+  text-decoration: none;
+}
+
 /*Mobile phone sizing */
 @media (max-width: 480px) {
   .content-wrapper {
     display: none;
   }
-  
+
   #description {
     text-decoration: none;
   }
   .mobile-size-memo {
     display: block;
-    color: black;  
+    color: black;
     height: auto;
     width: auto;
-    background: #E8EC67;
+    background: #e8ec67;
     padding: 10px 20px;
     border-radius: 10px;
     text-align: center;
   }
   .mobile-size-memo:hover {
-    background: #D25BF1;
+    background: #d25bf1;
   }
   button {
     display: none;
   }
-   footer {
-      font-size: 12px;
-     text-align: center;
-    }
+  footer {
+    font-size: 12px;
+    text-align: center;
+    padding-left: 0px;
   }
+}
