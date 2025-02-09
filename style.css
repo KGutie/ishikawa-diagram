@@ -301,6 +301,7 @@ a {
   }
   .social-icons:hover {
      border: 3px solid #caf0f8;
+    margin-top: -10px;
   }
   button {
     display: none;
