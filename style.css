@@ -65,7 +65,7 @@ h4 {
   padding: 20px 30px;
 }
 
-/*text ara for the program/ project name */
+/*text area for the program/ project name */
 .project-name {
   border: none;
   background: #f5f7f1;
@@ -76,6 +76,7 @@ h4 {
   border-radius: 7px;
   height: 40px;
   width: 1000px;
+  resize: none;
 }
 
 /* This is the size and color of the dropdown boxes */
@@ -140,6 +141,7 @@ h4 {
 /* the actual fishhead */
 .fishhead-text {
   display: flex;
+  resize: none;
   align-items: center;
   border-radius: 100px;
   background: #d25bf1;
