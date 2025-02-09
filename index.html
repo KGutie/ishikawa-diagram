@@ -35,15 +35,23 @@
     </h1>
     <p id="description"> Root Cause Identification Tool
     </p>
-    <p class="mobile-size-memo"> Looks like you're on mobile.<br><br> This tool prefers the big screen. Meet me there?</p>
+    <p class="mobile-size-memo"> Looks like you're on a small screen.<br><br> This tool prefers the big screen. Meet me there?</p>
   </div>
+
 </header>
 
 <body>
+
+  <!--Submit Button-->
+  <div class="button-box">
+    <button type="submit" id="save-as-pdf" onclick="alert('Thanks for getting to the root of things. Problem Solved!')" class="submit-button">Save to PDF
+    </button>
+  </div>
+  <!--End submit button-->
   <div>
 
     <div class="content-wrapper">
-      <h3> Build Your Diagram</h3>
+      <textarea> → Enter Project or Program Name</textarea>
 
       <!-- Begin Top Dropdown section  -->
       <form class="form-box">
@@ -194,7 +202,6 @@
           <input type="text" name:"specific-cause" class="cause-text" placeholder="Enter Specific Cause" required>
         </div>
       </form>
-
       <form class="form-box-f">
         <div class="form-group-2">
           <label for="specific-cause"></label>
@@ -281,33 +288,26 @@
           <!--End Cause Category 6 Section -->
         </div>
       </form>
-
       <br>
-
     </div>
+    <!-- Begin Social Icon section  -->
+    <div class="social-icon-container">
+      <div>
 
-    <!--Submit Button-->
-    <div class="button-box">
-      <button type="submit" id="save-as-pdf" class="submit-button">Save to PDF
-      </button>
-    </div>
-    <!--End submit button-->
-    <footer>
-      <div class="social-icon-container">
-        <div>
+        <a href="https://kdahlquist.netlify.app/" target="_blank">
+          <img class="social-icons" src="https://i.ibb.co/rQXdvC7/DSC-0196.jpg" alt="profile-photo">
+        </a>
 
-          <a href="https://kdahlquist.netlify.app/" target="_blank">
-            <img class="social-icons" src="https://i.ibb.co/rQXdvC7/DSC-0196.jpg" alt="profile-photo">
-          </a>
-
-          <a href="https://www.linkedin.com/in/kristy-dahlquist/" target="_blank">
-            <img class="social-icons" src="https://toppng.com/uploads/preview/linkedin-color-icon-linkedin-logo-round-11562920732qctvxkrdcd.png" alt="linkedin-logo">
-          </a>
-          <a href="https://github.com/KGutie" target="_blank">
-            <img class="social-icons" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="github-logo">
-          </a>
-        </div>
+        <a href="https://www.linkedin.com/in/kristy-dahlquist/" target="_blank">
+          <img class="social-icons" src="https://toppng.com/uploads/preview/linkedin-color-icon-linkedin-logo-round-11562920732qctvxkrdcd.png" alt="linkedin-logo">
+        </a>
+        <a href="https://github.com/KGutie" target="_blank">
+          <img class="social-icons" src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="github-logo">
+        </a>
       </div>
+    </div>
+
+    <footer>
       <p><em>Created by K.Dahlquist February 2025</em></p>
     </footer>
   </div>
