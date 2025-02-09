@@ -65,8 +65,9 @@ h4 {
   padding: 20px 30px;
 }
 
-textarea {
-  border:none;
+/*text ara for the program/ project name */
+.project-name {
+  border: none;
   background: #f5f7f1;
   margin: 20px auto;
   text-align: center;
@@ -129,28 +130,17 @@ textarea {
   margin-left: 160px;
 }
 /* styling for the fish head -- the circle */
-.head-box {
-  display: inline-block;
-  margin: 0px;
-}
-
-.form-group-fishhead {
-  padding: 0px;
-  font-size: 20px;
-  font-weight: bold;
-  max-width: 90%;
-  margin: 0px;
-  top: 550px;
-}
-
-.form-box-fishhead {
-  width: 20px;
-  height: 50px;
+.fishhead-box {
   margin-left: 800px;
   margin-top: -80px;
+  width: 50px;
+  height: 150px;
 }
+
 /* the actual fishhead */
 .fishhead-text {
+  display: flex;
+  align-items: center;
   border-radius: 100px;
   background: #d25bf1;
   opacity: 70%;
@@ -158,6 +148,9 @@ textarea {
   width: 200px;
   text-align: center;
   border: none;
+  box-sizing: border-box;
+  padding: 40px 20px;
+  font-family: arial;
   font-size: 16px;
   font-weight: bold;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
@@ -166,12 +159,7 @@ textarea {
 
 /* color of placehold text in all form fields */
 input::placeholder {
-  color: #36454F;
-}
-
-input::fishhead-text {
-  color: red;
-  z-index; 10;
+  color: #36454f;
 }
 
 .form-box-d {
@@ -227,8 +215,9 @@ select {
   max-width: 150px;
   height: 50px;
   margin: 20px 0;
-   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
- 
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 button:hover {
@@ -266,19 +255,22 @@ a {
 
 /*styling for saved pdf*/
 @media print {
-    header, button, .social-icon-container,  * {
-      visibility: hidden;
-    }
-    .content-wrapper * {
-      visibility: visible;
-    }
-    .content-wrapper {
-      position: absolute;
-      left: 0;
-      top: 30px;
-      width: 80%
-    }
+  header,
+  button,
+  .social-icon-container,
+  * {
+    visibility: hidden;
   }
+  .content-wrapper * {
+    visibility: visible;
+  }
+  .content-wrapper {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 80%;
+  }
+}
 
 /*Mobile phone sizing */
 @media (max-width: 480px) {
@@ -300,15 +292,15 @@ a {
     text-align: center;
   }
   .social-icons:hover {
-     border: 3px solid #caf0f8;
-    margin-top: -10px;
+    border: 3px solid #caf0f8;
   }
   button {
     display: none;
   }
   .social-icon-container {
-  justify-content: center;
-}
+    justify-content: center;
+    margin-top: -10px;
+  }
   footer {
     font-size: 12px;
     padding: 0px;
