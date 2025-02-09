@@ -65,10 +65,23 @@ h4 {
   padding: 20px 30px;
 }
 
+textarea {
+  border:none;
+  background: #f5f7f1;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 40px;
+  padding: 5px 0;
+  border-radius: 7px;
+  height: 40px;
+  width: 1000px;
+}
+
 /* This is the size and color of the dropdown boxes */
 .dropdown {
   background-color: #caf0f8;
-  width: 200px;
+  color: black;
+  width: 220px;
   height: 30px;
   margin: 10px;
   padding: 5px 10px;
@@ -77,6 +90,7 @@ h4 {
   border-right: 10px solid transparent;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
     rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  font-weight: bold;
 }
 
 .dropdown-group {
@@ -114,7 +128,7 @@ h4 {
   max-width: 700px;
   margin-left: 160px;
 }
-
+/* styling for the fish head -- the circle */
 .head-box {
   display: inline-block;
   margin: 0px;
@@ -138,14 +152,26 @@ h4 {
 /* the actual fishhead */
 .fishhead-text {
   border-radius: 100px;
-  background: #e8ec67;
+  background: #d25bf1;
+  opacity: 70%;
   height: 200px;
   width: 200px;
   text-align: center;
   border: none;
   font-size: 16px;
+  font-weight: bold;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+/* color of placehold text in all form fields */
+input::placeholder {
+  color: #36454F;
+}
+
+input::fishhead-text {
+  color: red;
+  z-index; 10;
 }
 
 .form-box-d {
@@ -187,34 +213,28 @@ select {
 }
 
 .button-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   max-width: 90%;
   height: auto;
 }
 
 .submit-button {
-  padding: 10px;
-  margin-top: 20px;
+  padding: 10px 20px;
   background: #927aff;
-  border: none;
   font-weight: bold;
-  border-radius: 50px;
+  border-radius: 10px;
+  border: none;
   min-width: 100px;
   max-width: 150px;
+  height: 50px;
   margin: 20px 0;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ 
 }
 
 button:hover {
   background-color: #d25bf1;
   transition: background-color 500ms;
-}
-
-footer {
-  display: block;
-  color: #caf0f8;
-  padding-left: 30px;
+  cursor: pointer;
 }
 
 /*contains the social icons*/
@@ -222,10 +242,11 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: left;
+  margin-top: 20px;
 }
 .social-icons {
   border-radius: 150px;
-  border: 3px solid #e8ec67;
+  border: 3px solid #d25bf1;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   height: 40px;
@@ -233,12 +254,18 @@ footer {
   margin: 2px;
 }
 
+footer {
+  display: block;
+  margin: auto;
+  color: #caf0f8;
+}
+
 a {
   text-decoration: none;
 }
 
 /*Mobile phone sizing */
-@media (max-width: 480px) {
+@media not all and (min-width: 1024px) {
   .content-wrapper {
     display: none;
   }
@@ -256,15 +283,17 @@ a {
     border-radius: 10px;
     text-align: center;
   }
-  .mobile-size-memo:hover {
-    background: #d25bf1;
+  .social-icons:hover {
+     border: 3px solid #caf0f8;
   }
   button {
     display: none;
   }
+  .social-icon-container {
+  justify-content: center;
+}
   footer {
     font-size: 12px;
-    text-align: center;
-    padding-left: 0px;
+    padding: 0px;
   }
 }
